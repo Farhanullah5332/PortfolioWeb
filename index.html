@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Farhan Ullah - Full-Stack Developer Portfolio" />
+    <meta name="keywords" content="Web Development, Portfolio, MERN Stack, Full-Stack Developer" />
+    <meta name="author" content="Farhan Ullah" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <meta property="og:title" content="Farhan Ullah - Full-Stack Developer" />
+    <meta property="og:description" content="Creative Full-Stack Developer specializing in modern web technologies" />
+    <meta property="og:image" content="https://yourdomain.com/assets/images/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://yourdomain.com" />
+    <meta property="twitter:title" content="Farhan Ullah - Full-Stack Developer" />
+    <meta property="twitter:description"
+        content="Creative Full-Stack Developer specializing in modern web technologies" />
+    <meta property="twitter:image" content="https://yourdomain.com/assets/images/og-image.jpg" />
+
+    <title>Farhan Ullah - Full-Stack Developer</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen select-none">
+    <div id="loader"
+        class="fixed inset-0 z-50 bg-gray-900 flex flex-col items-center justify-center  transition-opacity duration-500">
+        <!-- Animated Gradient Spinner -->
+        <div class="w-24 h-24 mb-4 rounded-full animate-spin 
+                border-4 border-dashed border-purple-500 border-t-transparent"></div>
+
+        <!-- Progress Text -->
+        <div class="text-white text-lg font-semibold mb-2">Loading portfolio...</div>
+
+        <!-- Progress Bar -->
+        <div class="w-48 h-2 bg-gray-700 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-purple-500 to-blue-500 animate-progress"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 backdrop-blur-sm border-b border-white/10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <h1
+                class="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 animate-gradient text-3xl md:text-4xl font-bold">
+                Farhan
+            </h1>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white text-2xl me-8"
+                aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-6 text-lg font-semibold">
+                <a class="navBtn" href="#home">Home</a>
+                <a class="navBtn" href="#education">Education</a>
+                <a class="navBtn" href="#certification">Certification</a>
+                <a class="navBtn" href="#skills">Skills</a>
+                <a class="navBtn" href="#projects">Projects</a>
+                <a class="navBtn" href="#experience">Experience</a>
+                <a class="navBtn" href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" aria-hidden="true" class="hidden md:hidden bg-gray-900/95 backdrop-blur-lg">
+            <div class="flex flex-col items-center py-4 space-y-3">
+                <a class="navBtn-mobile" href="#home">Home</a>
+                <a class="navBtn-mobile" href="#education">Education</a>
+                <a class="navBtn-mobile" href="#certification">Certification</a>
+                <a class="navBtn-mobile" href="#skills">Skills</a>
+                <a class="navBtn-mobile" href="#projects">Projects</a>
+                <a class="navBtn-mobile" href="#experience">Experience</a>
+                <a class="navBtn-mobile" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div class="p-4">
+        <main class="container mx-auto max-w-7xl mt-17">
+            <!-- Profile Section -->
+            <section id="home" class="grid md:grid-cols-3 gap-5 mb-8">
+                <section class="secBox flex flex-col items-center">
+                    <img src="Assets/images/morePic/ProfilePic.png" alt="Profile Pic" loading="lazy"
+                        class="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-white/30 shadow-lg hoverScale" />
+                    <h2 class="text-2xl text-white font-bold mt-4">Farhan Ullah</h2>
+                    <p class="text-gray-300 mb-4 ">Full Stack Developer</p>
+                    <a href="/cv.pdf" download
+                        class="inline-flex items-center px-4 py-2 font-bold text-white bg-white/20 rounded-2xl transition-all hover:bg-white/30">
+                        Download CV <i class="fa-solid fa-file-arrow-down ml-2"></i>
+                    </a>
+
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://wa.me/+923199485031?text=Hi%2C%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect%21"
+                            target="_blank" aria-label="WhatsApp" class="social-icon">
+                            <i class="fa-brands fa-square-whatsapp"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/farhan-ullah-b92a12318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            aria-label="LinkedIn" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Farhanullah5332" aria-label="GitHub" target="_blank"
+                            class="social-icon">
+                            <i class="fa-brands fa-square-github"></i>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- About Me -->
+                <div class="md:col-span-2 space-y-5">
+                    <section class="secBox">
+                        <h3 class="text-2xl font-bold text-white mb-4">About Me</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Full-stack developer passionate about building efficient,
+                            scalable web applications. Specializing in modern web
+                            technologies with focus on performance and user experience.
+                        </p>
+                    </section>
+                    <!-- Education -->
+                    <section id="education" class="secBox">
+                        <h3 class="text-2xl font-bold text-white mb-4">Education</h3>
+                        <ul class="text-gray-300 list-disc marker:text-blue-400 space-y-6 pl-4">
+                            <li class="relative">
+                                <h2 class="semiBoldXl">
+                                    Matriculation | Ghazali School Katlang, Mardan
+                                </h2>
+                                <p class="italic text-gray-400 text-sm">March 2017</p>
+                                <p class="text-gray-300 text-sm">
+                                    Completed Matriculation (10th Grade) under the
+                                    <abbr title="Board of Intermediate & Secondary Education Mardan">BISEM</abbr>
+                                    with
+                                    <span class="font-semibold text-white">70.40%</span> marks.
+                                </p>
+                            </li>
+                            <li class="relative">
+                                <h2 class="semiBoldXl">
+                                    Intermediate | Brilliant Science College Katlang, Mardan
+                                </h2>
+                                <p class="italic text-gray-400 text-sm">February 2019</p>
+                                <p class="text-gray-300 text-sm">
+                                    Completed Intermediate
+                                    <abbr title="Intermediate in Computer Science">(ICS)</abbr>
+                                    under (BISEM) with
+                                    <span class="font-semibold text-white">57.08%</span> marks.
+                                </p>
+                            </li>
+                            <li class="relative">
+                                <h2 class="semiBoldXl">
+                                    Bachelor’s Degree (In Progress) | International Islamic
+                                    University, Islamabad
+                                </h2>
+                                <p class="text-gray-300 text-sm">
+                                    Program:
+                                    <span class="font-semibold text-white">Bachelor of Science in Software Engineering
+                                        (BSSE)</span>
+                                </p>
+                                <p class="italic text-gray-400 text-sm">2022 – Present</p>
+                                <p class="text-gray-300 text-sm">
+                                    Currently enrolled in the
+                                    <span class="font-semibold text-white">4th semester</span>
+                                    with a CGPA of
+                                    <span class="font-semibold text-green-400">3.34</span>.
+                                    Developing expertise in
+                                    <span class="text-white">software development</span>,
+                                    <span class="text-white">web technologies</span>, and
+                                    <span class="text-white">data structures</span>.
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+
+            <!-- ..................................Certification Section.........................-->
+            <section id="certification" class="secBox mb-8">
+                <h3 class="text-2xl font-bold text-white mb-4">Certifications</h3>
+
+                <ul class="text-gray-300 list-disc marker:text-blue-400 space-y-6 pl-4">
+                    <li class="relative group">
+                        <h2 class="semiBoldXl flex justify-between items-center">
+                            Web Development Certification
+                            <a href="#" class="hoverOpacity"><i
+                                    class="fa-solid fa-arrow-up-right-from-square hover:text-white hoverScale"></i></a>
+                        </h2>
+                        <p class="italic text-gray-400 text-sm pt-1">
+                            Issued by XYZ Institute, June 2023
+                        </p>
+                        <p class="text-gray-300 text-sm pt-2">
+                            Gained expertise in HTML, CSS, JavaScript, React, and Node.js,
+                            focusing on building responsive and dynamic web applications.
+                        </p>
+                    </li>
+                    <li class="relative group">
+                        <h2 class="semiBoldXl flex justify-between items-center">
+                            Data Analytics Certification
+                            <a href="#" class="hoverOpacity"><i
+                                    class="fa-solid fa-arrow-up-right-from-square hover:text-white hoverScale"></i></a>
+                        </h2>
+                        <p class="italic text-gray-400 text-sm pt-1">
+                            Issued by ABC Academy, September 2023
+                        </p>
+                        <p class="text-gray-300 text-sm pt-2">
+                            Developed skills in Python, Pandas, NumPy, and data
+                            visualization, enabling efficient data analysis and insights
+                            extraction.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <!-- ..................................Skill Section.........................-->
+            <section id="skills" class="secBox mb-8">
+                <h3 class="text-2xl font-bold text-white mb-4">Skills</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-gray-300">
+                    <!-- Programming Languages -->
+                    <div class="secBox hoverScale">
+                        <h4 class="text-white font-semibold flex items-center gap-2 text-lg">
+                            <i class="fa-solid fa-code text-blue-400"></i> Programming
+                            Languages
+                        </h4>
+                        <ul class="list-disc pl-6 marker:text-blue-400 mt-3 space-y-1">
+                            <li>C++</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+
+                    <!-- Frontend Development -->
+                    <div class="secBox hoverScale">
+                        <h4 class="text-white font-semibold flex items-center gap-2 text-lg">
+                            <i class="fa-solid fa-desktop text-green-400"></i> Frontend
+                            Development
+                        </h4>
+                        <ul class="list-disc pl-6 marker:text-green-400 mt-3 space-y-1">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>Tailwind CSS</li>
+                            <li>React.js</li>
+                        </ul>
+                    </div>
+
+                    <!-- Backend Development -->
+                    <div class="secBox hoverScale">
+                        <h4 class="text-white font-semibold flex items-center gap-2 text-lg">
+                            <i class="fa-solid fa-server text-red-400"></i> Backend
+                            Development
+                        </h4>
+                        <ul class="list-disc pl-6 marker:text-red-400 mt-3 space-y-1">
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>REST APIs & Authentication</li>
+                        </ul>
+                    </div>
+
+                    <!-- Database & Tools -->
+                    <div class="secBox hoverScale">
+                        <h4 class="text-white font-semibold flex items-center gap-2 text-lg">
+                            <i class="fa-solid fa-database text-yellow-400"></i> Database &
+                            Tools
+                        </h4>
+                        <ul class="list-disc pl-6 marker:text-yellow-400 mt-3 space-y-1">
+                            <li>MongoDB</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+
+                    <!-- Full Stack Development -->
+                    <div class="secBox hoverScale col-span-1 sm:col-span-2">
+                        <h4 class="text-white font-semibold flex items-center gap-2 text-lg">
+                            <i class="fa-solid fa-layer-group text-blue-400"></i> Full-Stack
+                            Development
+                        </h4>
+                        <ul class="list-disc pl-6 marker:text-blue-400 mt-3 space-y-1">
+                            <li>MERN Stack (MongoDB, Express.js, React.js, Node.js)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- ..................................Projects Section.........................-->
+            <section id="projects" class="secBox mb-8">
+                <h3 class="text-2xl font-bold text-white mb-4">Projects</h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-gray-300">
+                    <!-- Project One -->
+                    <div class="bg-white/10 backdrop-blur-xl rounded-3xl  border border-white/20 shadow-2xl shadow-black/10 hoverScale group">
+                        <img src="Assets/images/ProjectPic/Project1.png" alt="Project 1"
+                            class="w-full h-55 object-cover rounded-t-3xl" />
+                        <div class="p-6">
+                            <h4 class="semiBoldXl flex justify-between items-center">
+                                E-Commerce Platform
+                                <div class="flex gap-3">
+                                    <a href="#" class="hoverOpacity"><i
+                                            class="fa-solid fa-arrow-up-right-from-square hover:text-white hoverScale"></i></a>
+                                    <a href="#" class="hoverOpacity"><i
+                                            class="fa-brands fa-github hover:text-white hoverScale"></i></a>
+                                </div>
+                            </h4>
+                            <p class="text-gray-300 mt-2">
+                                A fully responsive e-commerce platform built with React.js,
+                                Redux, and Firebase. Users can create accounts, manage
+                                products, and place orders.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="tecPill">React</span>
+                                <span class="tecPill">Node.js</span>
+                                <span class="tecPill">GraphQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Two -->
+                    <div class="bg-white/10 backdrop-blur-xl rounded-3xl  border border-white/20 shadow-2xl shadow-black/10 hoverScale group">
+                        <img src="Assets/images/ProjectPic/Project2.png" alt="Project 2"
+                            class="w-full h-55 object-cover rounded-t-3xl" />
+                        <div class="p-6">
+                            <h4 class="semiBoldXl flex justify-between items-center">
+                                Portfolio Website
+                                <div class="flex gap-3">
+                                    <a href="#" class="hoverOpacity"><i
+                                            class="fa-solid fa-arrow-up-right-from-square hover:text-white hoverScale"></i></a>
+                                    <a href="#" class="hoverOpacity"><i
+                                            class="fa-brands fa-github hover:text-white hoverScale"></i></a>
+                                </div>
+                            </h4>
+                            <p class="text-gray-300 mt-2">
+                                A sleek personal portfolio built using Next.js and Tailwind
+                                CSS, optimized for performance and SEO.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="tecPill">Next.js</span>
+                                <span class="tecPill">Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Three -->
+                    <div class="bg-white/10 backdrop-blur-xl rounded-3xl  border border-white/20 shadow-2xl shadow-black/10 hoverScale group">
+                        <img src="Assets/images/ProjectPic/Project3.png" alt="Project 3"
+                            class="w-full h-55 object-cover rounded-t-3xl" />
+                        <div class="p-6">
+                            <h4 class="semiBoldXl flex justify-between items-center">
+                                Airbnb Clone
+                                <div class="flex gap-3">
+                                    <a href="#" class="hoverOpacity"><i
+                                            class="fa-solid fa-arrow-up-right-from-square hover:text-white hoverScale"></i></a>
+                                    <a href="#" class="hoverOpacity"><i
+                                            class="fa-brands fa-github hover:text-white hoverScale"></i></a>
+                                </div>
+                            </h4>
+                            <p class="text-gray-300 mt-2">
+                                A full-stack Airbnb clone using MERN stack, featuring
+                                authentication, property listings, and booking system.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="tecPill">MongoDB</span>
+                                <span class="tecPill">Express.js</span>
+                                <span class="tecPill">React</span>
+                                <span class="tecPill">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ..................................Experiance Section.........................-->
+            <section id="experience" class="secBox mb-8">
+                <h3 class="text-2xl font-bold text-white mb-4">Experience</h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-gray-300">
+                    <!-- Experience One -->
+                    <div class="secBox hoverScale">
+                        <h4 class="semiBoldXl flex items-center gap-2">
+                            <i class="fa-solid fa-laptop-code text-blue-400"></i> Web
+                            Development Intern
+                        </h4>
+                        <p class="italic text-gray-400 text-sm">
+                            XYZ Software House | June 2023 - Present
+                        </p>
+                        <p class="text-gray-300 mt-2">
+                            Developing and optimizing web applications using **MERN stack**.
+                            Collaborating on frontend UI/UX improvements and backend API
+                            integrations.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="tecPill">React</span>
+                            <span class="tecPill">Node.js</span>
+                            <span class="tecPill">MongoDB</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience Two -->
+                    <div class="secBox hoverScale">
+                        <h4 class="semiBoldXl flex items-center gap-2">
+                            <i class="fa-solid fa-database text-yellow-400"></i> Data
+                            Analysis Intern
+                        </h4>
+                        <p class="italic text-gray-400 text-sm">
+                            ABC Analytics Firm | Jan 2023 - May 2023
+                        </p>
+                        <p class="text-gray-300 mt-2">
+                            Worked with **Python, Pandas, and NumPy** for data analysis.
+                            Built interactive dashboards and visualized insights using
+                            **Power BI**.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="tecPill">Python</span>
+                            <span class="tecPill">Pandas</span>
+                            <span class="tecPill">Power BI</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience Three -->
+                    <div class="secBox hoverScale">
+                        <h4 class="semiBoldXl flex items-center gap-2">
+                            <i class="fa-solid fa-code text-green-400"></i> Freelance Web
+                            Developer
+                        </h4>
+                        <p class="italic text-gray-400 text-sm">
+                            Upwork & Fiverr | 2022 - Present
+                        </p>
+                        <p class="text-gray-300 mt-2">
+                            Developed multiple **responsive web applications** for clients
+                            using **React, Tailwind CSS, and Node.js**. Focused on
+                            optimizing performance and user experience.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="tecPill">React</span>
+                            <span class="tecPill">Tailwind CSS</span>
+                            <span class="tecPill">Express.js</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="secBox mb-8">
+                <h3 class="text-2xl font-bold text-white mb-6">Get in Touch</h3>
+                <form id="contact-form" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-3">
+                        <input type="text" id="name" placeholder="Name" class="form-input" required />
+                        <input type="email" id="email" placeholder="Email" class="form-input" required />
+                    </div>
+                    <textarea id="message" rows="4" placeholder="Message" class="form-input" required></textarea>
+                    <button type="submit"
+                        class="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-3 rounded-xl hoverScale">
+                        Send Message
+                    </button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-4 mt-10">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://wa.me/+923199485031?text=Hi%2C%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect%21"
+                    target="_blank" aria-label="WhatsApp" class="social-icon">
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/farhan-ullah-b92a12318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    aria-label="LinkedIn" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Farhanullah5332" aria-label="GitHub" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+                <a href="mailto:farhanullahmrd3@gmail.com" aria-label="Email" target="_blank" class="social-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+
+            <!-- Footer Text -->
+            <p class="text-sm text-gray-400">
+                &copy; 2025 Farhan Ullah. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+# .gitignore
+node_modules/       # NPM dependencies (not needed for deployment)
+package-lock.json  # Remove this line if you want to keep it
+package.json       # Remove this line if you want to keep it
+input.css          # Remove this line if you want to keep the source CSS
